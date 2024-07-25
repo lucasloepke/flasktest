@@ -3,31 +3,46 @@
     font-family: "72";
 }
 
+/* Make sure html and body take full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Set the flex container */
 body {
-    font-family: "72";
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 
 /* Style the header */
 .header {
     overflow: hidden;
-    background-color: #012931;
-    color: #C2FCEE;
+    background-color: #D1EFFF;
+    color: #02414C;
     padding: 10px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    flex-shrink: 0;
 }
 
 /* Style the content */
 .content {
+    overflow-y: hidden;
+    flex: 1; /* Take up remaining space */
     text-align: center;
     background-color: #C2FCEE;
     padding: 10px;
+    background-image: url('trim.jpg');
 }
 
 /* Style the footer */
 .footer {
-    background-color: #2CE0BF;
+    background-color: #FF8CB2;
     padding: 10px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    flex-shrink: 0;
 }
