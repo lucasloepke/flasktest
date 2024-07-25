@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    font-family: "72";
+}
+
+body {
+    font-family: "72";
+}
+
+/* Style the header */
+.header {
+    overflow: hidden;
+    background-color: #012931;
+    color: #C2FCEE;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+/* Style the content */
+.content {
+    text-align: center;
+    background-color: #C2FCEE;
+    padding: 10px;
+}
+
+/* Style the footer */
+.footer {
+    background-color: #2CE0BF;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Testsite</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="header">
+        <p>Expensive Statements Tool</p>
+    </div>
+    <div class="content">
+        {% if person %}
+        <h1>Welcome, {{ person }}!</h1>
+        {% else %}
+        <h1>Hello, World!</h1>
+        {% endif %}
+    </div>
+    <div class="footer">
+        <p>Footer</p>
+    </div>
+</body>
+</html>
