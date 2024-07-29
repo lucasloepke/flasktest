@@ -23,8 +23,6 @@ body {
     background-color: #D1EFFF;
     color: #02414C;
     padding: 10px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
     flex-shrink: 0;
 }
 
@@ -35,14 +33,13 @@ body {
     text-align: center;
     background-color: #C2FCEE;
     padding: 10px;
-    background-image: url('trim.jpg');
+    background-image: url('fullsize.jpg');
+    background-position-y: 25%;
 }
 
 /* Style the footer */
 .footer {
     background-color: #FF8CB2;
-    padding: 10px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    padding-left: 10px;
     flex-shrink: 0;
 }
