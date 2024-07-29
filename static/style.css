@@ -32,7 +32,7 @@ body {
     flex: 1; /* Take up remaining space */
     text-align: center;
     background-color: #C2FCEE;
-    padding: 10px;
+    padding: 20px;
     background-image: url('fullsize.jpg');
     background-position-y: 25%;
 }
@@ -43,3 +43,23 @@ body {
     padding-left: 10px;
     flex-shrink: 0;
 }
+
+.customButton { 
+    border:10px ridge #2CE0BF;
+    border-radius:10px;
+    padding:10px;
+     margin:10px;
+    background-color:#FFFFFF;
+    color:#000000;
+    font-weight:bold;
+    opacity:1;
+    transition:0s;
+    } 
+    .customButton:hover {
+    cursor:pointer;
+    background-color:#C2FCEE;
+    opacity:1;
+    transition:0s;
+    color:#000000;
+    } 
+    

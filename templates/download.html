@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Testsite</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="content">
+        {% if updone %}
+        <h1>Download Summary</h1>
+        <button class="btn customButton large">Download</button>
+        
+        {% else %}
+        <h1>Authenticate to Continue</h1>
+        {% endif %}
+    </div>
+</body>
+</html>
