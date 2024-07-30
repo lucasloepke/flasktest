@@ -3,63 +3,38 @@
     font-family: "72";
 }
 
-/* Make sure html and body take full height */
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
 }
 
-/* Set the flex container */
 body {
     display: flex;
     flex-direction: column;
-    overflow: hidden;
-}
-
-/* Style the header */
-.header {
-    overflow: hidden;
-    background-color: #D1EFFF;
-    color: #02414C;
-    padding: 10px;
-    flex-shrink: 0;
-}
-
-/* Style the content */
-.content {
     overflow-y: hidden;
-    flex: 1; /* Take up remaining space */
-    text-align: center;
-    background-color: #C2FCEE;
-    padding: 20px;
     background-image: url('fullsize.jpg');
     background-position-y: 25%;
 }
 
-/* Style the footer */
-.footer {
-    background-color: #FF8CB2;
-    padding-left: 10px;
-    flex-shrink: 0;
+.content {
+    flex: 1;
+    text-align: center;
+    padding: 80px;
 }
 
 .customButton { 
     border:10px ridge #89D1FF;
     border-radius:10px;
     padding:10px;
-    margin:10px;
-    background-color:#FFFFFF;
+    margin:5px;
+    background-color:transparent;
     color:#000000;
     font-weight:bold;
-    opacity:1;
-    transition:0s;
     } 
     .customButton:hover {
     cursor:pointer;
     background-color:#C2FCEE;
-    opacity:1;
-    transition:0s;
     color:#000000;
     } 
 

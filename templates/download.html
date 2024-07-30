@@ -9,9 +9,14 @@
         {% if updone %}
         <h1>Download Summary</h1>
         <button class="btn customButton large">Download</button>
+        <h1>Out: {{ out }}</h1>
         
         {% else %}
         <h1>Authenticate to Continue</h1>
+        {% endif %}
+
+        {% if output %}
+        <h1>{{ out }}</h1>
         {% endif %}
     </div>
 </body>

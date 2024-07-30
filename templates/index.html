@@ -9,7 +9,7 @@
         {% if person %}
         <h1>Welcome, {{ person }}</h1>
         <p>Upload Actions and Statements to summarize</p>
-        <form action="/upload" method="post" enctype="multipart/form-data">
+        <form action="/download" method="post" enctype="multipart/form-data">
             <input class="btn customButton large" type="file" name="file1" accept=".csv" required>
             <input class="btn customButton large" type="file" name="file2" accept=".csv" required>
             <input class="btn customButton large" type="submit" value="Upload">

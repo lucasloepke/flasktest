@@ -1,5 +1,6 @@
 from flask import Flask, request, render_template, redirect, url_for, send_from_directory
-import os
+import os, subprocess
+import scripts.expensive_statements as esmain
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = 'uploads'
@@ -9,7 +10,7 @@ os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 def index(name='User'):
     return render_template('index.html', person=name, updone=False)
 
-@app.route('/upload', methods=['POST'])
+@app.route('/download', methods=['POST'])
 def postup(updone=True):
     if 'file1' not in request.files or 'file2' not in request.files:
         return 'No file found', 400
@@ -23,7 +24,9 @@ def postup(updone=True):
     file1.save(file1_path)
     file2.save(file2_path)
 
-    return render_template('download.html', updone=True)
+    # esmain()
+
+    return render_template('download.html', updone=True, out=file1_path)
 
 
 if __name__ == '__main__':
